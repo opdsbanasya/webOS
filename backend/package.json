@@ -1,14 +1,14 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Collabarative Document platform",
-  "homepage": "https://github.com/opdsbanasya/SynkDocs#readme",
+  "description": "Web OS",
+  "homepage": "https://github.com/opdsbanasya/webOS#readme",
   "bugs": {
-    "url": "https://github.com/opdsbanasya/SynkDocs/issues"
+    "url": "https://github.com/opdsbanasya/webOS/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opdsbanasya/SynkDocs.git"
+    "url": "git+https://github.com/opdsbanasya/webOS.git"
   },
   "license": "ISC",
   "author": "Dharm Singh",
