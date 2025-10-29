@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+@import "@fontsource/roboto-flex/variable.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -42,72 +47,101 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 1.5rem;
+  
+  /* Material You Light Theme - inspired by Google Pixel */
+  --background: #fef7ff;
+  --foreground: #1d1b20;
+  --card: #ffffff;
+  --card-foreground: #1d1b20;
+  --popover: #ffffff;
+  --popover-foreground: #1d1b20;
+  
+  /* Primary - Dynamic Purple (Material You accent) */
+  --primary: #6750a4;
+  --primary-foreground: #ffffff;
+  
+  /* Secondary - Soft neutral tones */
+  --secondary: #e8def8;
+  --secondary-foreground: #1d1b20;
+  
+  /* Muted - Background variants */
+  --muted: #f5eefa;
+  --muted-foreground: #49454f;
+  
+  /* Accent - Vibrant Material You accent */
+  --accent: #7f67be;
+  --accent-foreground: #ffffff;
+  
+  --destructive: #ba1a1a;
+  --border: #e7e0ec;
+  --input: #e7e0ec;
+  --ring: #6750a4;
+  
+  /* Chart colors - Material You palette */
+  --chart-1: #6750a4;
+  --chart-2: #00696c;
+  --chart-3: #8e4585;
+  --chart-4: #006a6a;
+  --chart-5: #984061;
+  
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1d1b20;
+  --sidebar-primary: #6750a4;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e8def8;
+  --sidebar-accent-foreground: #1d1b20;
+  --sidebar-border: #e7e0ec;
+  --sidebar-ring: #6750a4;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Material You Dark Theme - inspired by Google Pixel dark mode */
+  --background: #1d1b20;
+  --foreground: #e6e0e9;
+  --card: #2b2930;
+  --card-foreground: #e6e0e9;
+  --popover: #2b2930;
+  --popover-foreground: #e6e0e9;
+  
+  /* Primary - Brighter purple for dark mode */
+  --primary: #d0bcff;
+  --primary-foreground: #381e72;
+  
+  /* Secondary */
+  --secondary: #4a4458;
+  --secondary-foreground: #e6e0e9;
+  
+  /* Muted */
+  --muted: #313033;
+  --muted-foreground: #cac4d0;
+  
+  /* Accent */
+  --accent: #d0bcff;
+  --accent-foreground: #381e72;
+  
+  --destructive: #ffb4ab;
+  --border: #49454f;
+  --input: #49454f;
+  --ring: #d0bcff;
+  
+  /* Chart colors for dark mode */
+  --chart-1: #d0bcff;
+  --chart-2: #4fd8eb;
+  --chart-3: #efb8c8;
+  --chart-4: #4db6ac;
+  --chart-5: #f48fb1;
+  
+  /* Sidebar */
+  --sidebar: #2b2930;
+  --sidebar-foreground: #e6e0e9;
+  --sidebar-primary: #d0bcff;
+  --sidebar-primary-foreground: #381e72;
+  --sidebar-accent: #4a4458;
+  --sidebar-accent-foreground: #e6e0e9;
+  --sidebar-border: #49454f;
+  --sidebar-ring: #d0bcff;
 }
 
 @layer base {
@@ -116,5 +150,85 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Material You Design System Utilities */
+@layer utilities {
+  /* Elevation shadows - Material You style */
+  .elevation-0 {
+    box-shadow: none;
+  }
+  
+  .elevation-1 {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+  
+  .elevation-2 {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  }
+  
+  .elevation-3 {
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .elevation-4 {
+    box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .elevation-5 {
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Material You transitions */
+  .material-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .material-transition-fast {
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Material You surface tints */
+  .surface-tint {
+    background: linear-gradient(0deg, rgba(103, 80, 164, 0.05) 0%, rgba(103, 80, 164, 0.05) 100%), var(--card);
+  }
+  
+  .surface-tint-strong {
+    background: linear-gradient(0deg, rgba(103, 80, 164, 0.12) 0%, rgba(103, 80, 164, 0.12) 100%), var(--card);
+  }
+  
+  /* Google Sans typography (using Roboto as fallback) */
+  .font-google {
+    font-family: 'Roboto Flex', 'Roboto', sans-serif;
+  }
+  
+  /* Material You rounded corners */
+  .rounded-material-sm {
+    border-radius: 0.75rem;
+  }
+  
+  .rounded-material {
+    border-radius: 1rem;
+  }
+  
+  .rounded-material-lg {
+    border-radius: 1.5rem;
+  }
+  
+  .rounded-material-xl {
+    border-radius: 1.75rem;
+  }
+  
+  .rounded-material-2xl {
+    border-radius: 2rem;
+  }
+  
+  .rounded-material-full {
+    border-radius: 624.9375rem;
   }
 }
